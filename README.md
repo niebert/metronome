@@ -10,7 +10,13 @@ Issues after fork from Scott Hudsons metronome:
 * Chrome support for Webworkers to run offline - already mentioned by Scott Hudson 2016 - check causes
 
 ## Based on Offline Metronome of Scott Hudson
-Scsing @cwilso's [HTML5 demo metronome](http://webaudiodemos.appspot.com/metronome/index.html) as a starting point, I added several features commonly seen in professional metronomes, including:
+This metronome is based on Scott Hudson great work for an Offline Javascript Metronome, that runs in your browser without internet connection.
+
+### History
+Scott Hudson used @cwilso's [HTML5 demo metronome](http://webaudiodemos.appspot.com/metronome/index.html) as a starting point.
+
+### Features
+Scott added several features to @cwilso's [HTML5 demo metronome](http://webaudiodemos.appspot.com/metronome/index.html) which are commonly seen in professional metronomes, including:
 
 * variable meter input
 * support for triplet subdivisions
@@ -19,15 +25,18 @@ Scsing @cwilso's [HTML5 demo metronome](http://webaudiodemos.appspot.com/metrono
 * subdivision volume toggling
 * material design UI
 
-Adding triplet note support was the trickiest, since it required converting the base note interval from a 16th note to a twelvelet, which contains both eighth note and sixteenth note intervals (thanks college drumline days).  The scheduler picks out the relevant subdivisions in the polyrhythm and mutes the rest. This worked way better than simultaneously scheduling duple subdivisions and triple subdivisions, especially with the variable tempo input.
+Furthermore Scott added triplet note support, which was the trickiest to implement, since it required converting the base note interval from a 16th note to a twelvelet, which contains both eighth note and sixteenth note intervals.
 
+### Offline Use
+Scott mentioned that Chrome doesn't like running web workers locally apparently. Chrome is widely used browser and the offline check in 2021 of the Scott's metronome did not work in Chrome now.
 
 ### Setup
 1. clone the repository
 2. open `index.html` using a broswer other than Chrome (Chrome doesn't like running web workers locally apparently)
 
-### Todos
+### ToDos
 * toggle note pitches
 * tap tempo detection
 * easy sound file import
 * add visual metronome
+* fixing the Chrome problem for offline use 
