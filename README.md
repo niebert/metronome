@@ -3,7 +3,11 @@
 ![alt tag](assets/img/screenshot.png)
 
 ## Online Demo of Javascript Offline Metronome
-* [Javascript Metronome](https://niebert.github.io/metronome)
+[Demo Javascript Metronome](https://niebert.github.io/metronome)
+
+Issues after fork from Scott Hudsons metronome: 
+* Icons for play button were missing - check remote CSS
+* Chrome support for Webworkers to run offline - already mentioned by Scott Hudson 2016 - check causes
 
 ## Based on Offline Metronome of Scott Hudson
 Scsing @cwilso's [HTML5 demo metronome](http://webaudiodemos.appspot.com/metronome/index.html) as a starting point, I added several features commonly seen in professional metronomes, including:
