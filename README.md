@@ -2,7 +2,11 @@
 
 ![alt tag](assets/img/screenshot.png)
 
-Using @cwilso's [HTML5 demo metronome](http://webaudiodemos.appspot.com/metronome/index.html) as a starting point, I added several features commonly seen in professional metronomes, including:
+## Online Demo of Javascript Offline Metronome
+* [Javascript Metronome](https://niebert.github.io/metronome)
+
+## Based on Offline Metronome of Scott Hudson
+Scsing @cwilso's [HTML5 demo metronome](http://webaudiodemos.appspot.com/metronome/index.html) as a starting point, I added several features commonly seen in professional metronomes, including:
 
 * variable meter input
 * support for triplet subdivisions
