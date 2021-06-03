@@ -86,6 +86,30 @@ function scheduler() {
   }
 }
 
+function el(id) {
+  var vReturn = document.getElementById(id);
+  if (!vReturn) {
+    console.error("DOM Element with ID [" + id + "] undefined!");
+  }
+  return vReturn;
+}
+
+function hide_icon(pIcon) {
+  //document.querySelector('.'+pIcon).style.display = 'none';
+  var vIconNode = el(pIcon);
+  if (vIconNode) {
+    vIconNode.style.display = 'none';
+  }
+}
+
+function show_icon(pIcon) {
+  //document.querySelector('.'+pIcon).style.display = 'block';
+  var vIconNode = el(pIcon);
+  if (vIconNode) {
+    vIconNode.style.display = 'block';
+  }
+}
+
 function play() {
   isPlaying = !isPlaying;
 
@@ -93,10 +117,14 @@ function play() {
     currentTwelveletNote = 0;
     nextNoteTime = audioContext.currentTime;
     timerWorker.postMessage("start");
-    document.getElementById("play-icon").innerHTML = "pause";
+    //document.getElementById("play-icon").innerHTML = "pause";
+    show_icon("i4m-play-icon");
+    hide_icon("i4m-pause-icon");
+
   } else {
     timerWorker.postMessage("stop");
-    document.getElementById("play-icon").innerHTML = "play_arrow";
+    show_icon("i4m-pause-icon");
+    hide_icon("i4m-play-icon");
   }
 }
 

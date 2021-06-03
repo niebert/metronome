@@ -6,11 +6,12 @@
     <title>Metronome</title>
 
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" type="text/css">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="assets/css/material.indigo.pink.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
-    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <script src="assets/js/material.min.js"></script>
     <script src="assets/js/monkeypatch.js"></script>
     <script src="assets/js/metronome.js"></script>
   </head>
@@ -22,11 +23,14 @@
             <span class="mdl-layout-title">The Metronome</span>
           </div>
           <div class="mdl-layout__header-row">
-            <button class="mdl-button mdl-demo mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add"
-            onclick="play();">
-            <i id="play-icon" class="material-icons" role="presentation">play_arrow</i>
-            <span class="visuallyhidden">Add</span>
-          </button>
+            <div class="mdl-cell mdl-cell--6-col">
+            <button class="mdl-button mdl-demo mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="playicon" onclick="play();">
+              <center>
+                <img id="i4m-play-icon" src="img/icons-svg/fa-audio-play-white.svg" style="display:none">
+                <img id="i4m-pause-icon" src="img/icons-svg/fa-audio-pause-white.svg">
+              </center>
+            </button>
+          </div>
           </div>
         </header>
 
