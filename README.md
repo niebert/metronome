@@ -5,15 +5,21 @@
 ## Online Demo of Javascript Offline Metronome
 [Demo Javascript Metronome](https://niebert.github.io/metronome)
 
-Issues after fork from Scott Hudsons metronome: 
+Issues after fork from Scott Hudsons metronome:
 * Icons for play button were missing - check remote CSS
 * Chrome support for Webworkers to run offline - already mentioned by Scott Hudson 2016 - check causes
 
 ## Based on Offline Metronome of Scott Hudson
 This metronome is based on Scott Hudson great work for an Offline Javascript Metronome, that runs in your browser without internet connection.
 
+## Global Offline Metronome
+The global offline metronome was based on this metronome of Scott Hudson to be used in online rehearsal e.g. for a choir.
+
+See also **[https://niebert.github.io/globalmetronome Online Demo of Global Metronome]**.
+
 ### History
 Scott Hudson used @cwilso's [HTML5 demo metronome](http://webaudiodemos.appspot.com/metronome/index.html) as a starting point.
+* Repository was used for testing to identify challenges mentioned by Scott Hudson e.g. Chrome.
 
 ### Features
 Scott added several features to @cwilso's [HTML5 demo metronome](http://webaudiodemos.appspot.com/metronome/index.html) which are commonly seen in professional metronomes, including:
@@ -39,4 +45,4 @@ Scott mentioned that Chrome doesn't like running web workers locally apparently.
 * tap tempo detection
 * easy sound file import
 * add visual metronome
-* fixing the Chrome problem for offline use 
+* fixing the Chrome problem for offline use
