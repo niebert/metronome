@@ -15,7 +15,9 @@ This metronome is based on Scott Hudson great work for an Offline Javascript Met
 ## Global Offline Metronome
 The global offline metronome was based on this metronome of Scott Hudson to be used in online rehearsal e.g. for a choir.
 
-See also **[https://niebert.github.io/globalmetronome Online Demo of Global Metronome]**.
+![alt tag](assets/img/screenshot_globalmetronome.png)
+
+See also **[Online Demo of Global Metronome](https://niebert.github.io/globalmetronome)**.
 
 ### History
 Scott Hudson used @cwilso's [HTML5 demo metronome](http://webaudiodemos.appspot.com/metronome/index.html) as a starting point.
