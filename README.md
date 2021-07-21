@@ -36,15 +36,15 @@ Scott added several features to @cwilso's [HTML5 demo metronome](http://webaudio
 Furthermore Scott added triplet note support, which was the trickiest to implement, since it required converting the base note interval from a 16th note to a twelvelet, which contains both eighth note and sixteenth note intervals.
 
 ### Offline Use
-Scott mentioned that Chrome doesn't like running web workers locally apparently. Chrome is widely used browser and the offline check in 2021 of the Scott's metronome did not work in Chrome now.
+Scott mentioned that Chrome doesn't like running web workers locally apparently. Chrome is widely used browser and the offline check in 2021 of the Scott's metronome did not work in Chrome now (Download Global Metronome instead and start `index.html`).
 
 ### Setup
-1. clone the repository
-2. open `index.html` using a broswer other than Chrome (Chrome doesn't like running web workers locally apparently)
+1. clone the repository or [download ZIP](https://github.com/niebert/globalmetronome/archive/refs/heads/main.zip) 
+2. open `index.html` using a browser other than Chrome (Chrome doesn't like running web workers locally apparently)
 
 ### ToDos
 * toggle note pitches
 * tap tempo detection
 * easy sound file import
-* add visual metronome
+* [add visual metronome - DONE in Global Metronome](https://niebert.github.io/globalmetronome)
 * fixing the Chrome problem for offline use
