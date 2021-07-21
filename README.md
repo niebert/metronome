@@ -13,7 +13,7 @@ Issues after fork from Scott Hudsons metronome:
 This metronome is based on Scott Hudson great work for an Offline Javascript Metronome, that runs in your browser without internet connection.
 
 ## Global Offline Metronome
-The global offline metronome was based on this metronome of Scott Hudson to be used in online rehearsal e.g. for a choir.
+The [global offline metronome](https://niebert.github.io/globalmetronome) was based on this metronome of Scott Hudson to be used in online rehearsal e.g. for a choir.
 
 ![alt tag](assets/img/screenshot_globalmetronome.png)
 
